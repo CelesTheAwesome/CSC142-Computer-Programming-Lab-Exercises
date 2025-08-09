@@ -11,7 +11,7 @@ public class SalesReport{
 		int lineCount=0;
 		double total=0;
 		Scanner fileScanner = new Scanner(filename);
-		while (lineCount>30) {
+		while (lineCount<30) {
 			double lineInfo=fileScanner.nextDouble();
 			total=total + lineInfo;
 			lineCount=lineCount+1;}
@@ -25,3 +25,4 @@ public class SalesReport{
 	System.out.println("Total: "+total);
 	System.out.println("Average: "+average);}
 }
+
