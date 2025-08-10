@@ -5,7 +5,8 @@ import javax.swing.JOptionPane;
 
 public class SalesReport{
 	public static String getfilename() {
-	String filename=JOptionPane.showInputDialog(null,"Enter file name: ");
+	String name=JOptionPane.showInputDialog(null,"Enter file name: ");
+	String filename= String .parseString(name);
 	return filename;}
 	public static double getTotalSales(String filename) {
 		int lineCount=0;
@@ -25,3 +26,4 @@ public class SalesReport{
 	public static void displayResults(double total, double average) {
 		JOptionPane.showMessageDialog(null, "The total is "+total+" and the average is "+average+".");}
 }
+
